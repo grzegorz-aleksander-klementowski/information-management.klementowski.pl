@@ -1,0 +1,882 @@
+
+  /* Styl dla ekranów w orientacji pionowej */
+@media screen and (orientation: portrait) {
+
+
+	/* INDEX NAV */
+	.nav-links {
+      		display:block; /* ukryj linki na małych ekranach */
+	}
+  
+	.nav-toggle {
+      		display: grid; /* pokaż przycisk hamburgera */
+    	}
+
+	.nav-toggle:hover {
+			cursor: pointer;
+	}
+
+
+ 	/* toggled-nav-appered */ 
+	nav > .nav-container > .nav-links {
+		display: none;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr) 3fr;
+		justify-items: center;
+		align-items: center;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+	}
+
+	nav > .nav-container > .nav-links > a {
+			color: black;
+	}
+
+	nav > .nav-container > .nav-links > span {
+		position: absolute;
+	    	top: 20px;
+	    	right: 40px;
+	    	z-index: 3;
+	    	font-weight: 200;
+	    	font-size: 2em;
+	   	color: black;
+	    	padding: 10px 30px;
+	} 
+
+	nav > .nav-container > .nav-links > span {
+		cursor: pointer;
+	}
+
+	nav > .nav-container > .nav-links > a:nth-child(2) {grid-row: 2;}
+	nav > .nav-container > .nav-links > a:nth-child(3) {grid-row: 3;}
+	nav > .nav-container > .nav-links > a:nth-child(4) {grid-row: 4;}
+	nav > .nav-container > .nav-links > a:nth-child(5) {grid-row: 5;}
+	nav > .nav-container > .nav-links > a:nth-child(6) {grid-row: 6;}
+	nav > .nav-container > .nav-links > div:nth-child(7) {grid-row: 7;}
+
+
+
+
+	nav > .nav-container > .show-menu {
+			display: grid;
+			opacity: 1;
+			transform: translateY(0);
+			transition: opacity 1s, transform 1s;
+			transition-delay: 1s; 
+	}
+
+	nav > .nav-container > .hide-menu {
+			opacity: 0;
+			transform: translateY(-100%);
+			transition: opacity 1s, transform 1s;
+			transition-delay: 0.5s; /* opóźnienie potrzebne, aby element nie zniknął natychmiast */
+			display: none;
+	}
+
+	nav > .nav-container > .nav-links > .nav-social-links {
+			display: block;	
+	}
+
+	nav > .nav-container > .nav-links > span {
+			display: block;
+	}
+
+
+	header.header-index {
+		grid-template-rows: 3fr 2fr;
+	}
+	.header-buttons {
+	    grid-row: 2;
+	    display: grid;
+	    grid-template-columns: 1fr;
+	    grid-template-rows: repeat(2, 1fr);
+    	}
+	
+	/* main-presentation */
+
+	.content-container {
+		width: 97%;
+	}
+
+	main > section.main-presentation {
+			align-items: center;
+	}
+
+	main > section.main-presentation .main-text-presentation{
+			font-size: 1.1em;
+	}
+
+	main > section.main-presentation > .content-container {
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 1fr;		
+    	}
+
+	.main-presentation .main-picture-presentation {
+      		grid-column: 1;
+			grid-row: 2;
+    	}
+
+	main section.main-presentation img {
+			width: 100%;
+			height: 50vw;
+	}
+	/* hero-skills */	
+	main > section.hero-skills .projects .project > .project-icons-cover {
+			height: 10vh;
+	}
+
+	/* curriculum-vitae */
+
+
+	main > section.curriculum-vitae > .content-container {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 2fr 2fr 1fr;
+	}
+
+
+	main > section.curriculum-vitae > .content-container > :nth-child(1) {
+			grid-column: 1;
+			grid-row: 1;
+	}
+
+	main > section.curriculum-vitae > .content-container > :nth-child(2) {
+			grid-column: 1;
+			grid-row: 2;
+	}
+
+
+	main > section.curriculum-vitae > .content-container > :nth-child(3) {
+			grid-column: 1;
+			grid-row: 3;
+	}
+
+	main > section.curriculum-vitae > .content-container > :nth-child(4) {
+			grid-column: 1;
+			grid-row: 4;
+	}
+		
+	main > section.curriculum-vitae > .content-container .soft-skills-list li{
+			margin: 0;	
+			padding: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list {
+			grid-gap: 0.9vh;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {	
+			font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3 {
+			font-size: 1em;
+			padding-top: 5px;
+	}
+		
+
+	/* footer */
+
+	footer.footer-index {
+			justify-items: center;
+			align-items: center;
+	}
+
+	footer.footer-index > .content-container {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 3fr;
+	}
+
+	.footer-index > .content-container > .contact {
+			grid-row: 2;
+			grid-template-columns: 1fr; 
+			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 20px;
+	}
+
+}
+  
+@media screen and (orientation: portrait) and (max-width: 481px) {
+
+		h2 {
+			margin: 5px 0 0 0;
+			font-size: 2vh;
+		}
+
+		h3 {
+			margin: 5px 0 0 0;
+			font-size: 2vh;
+		}
+
+		/* NAV */
+
+		.nav-container {
+			padding: 0 5%;
+			height: 40px;
+		}
+
+		nav > .nav-container > .nav-social-links {
+			display: none;
+		}
+
+		.nav-logo .names {
+			font-size: 0.5em;
+		}
+
+		.nav-logo .surname {
+				font-size: 0.7em;
+		}
+	
+		nav a {
+				padding: 0;
+		}
+
+		.nav-social-links {
+				display: flex;      
+		}
+
+		.nav-toggle {
+				width: 30px;
+				height: 25px;
+				border: 1px solid #e7e7e7;
+		}
+
+		nav > .nav-container > .nav-links > span {
+				padding: 5px;
+		}
+
+
+		/* HEADER */
+
+		.header-hero {
+				width: 100vw;
+				font-size: 0.7em;
+				margin: 0 5%;      
+		}
+
+		.header-buttons button:nth-child(1) {
+				border-radius: 20px; 
+		}
+		  
+		.header-buttons button:nth-child(2) {
+				border-radius: 20px; 
+		}
+
+		/* MAIN */
+
+		main > section {
+  			align-items: center;
+		}
+
+		.content-container {
+			margin: 0;
+		}
+
+		/* main-presentation */
+		
+		
+		
+		
+
+		main > section.main-presentation .main-text-presentation {
+				font-size: 2vh;
+		}
+
+		main > section.main-presentation p {
+				margin: 5px 0 0 0;
+		}
+
+		main section.main-presentation img {
+				height: 60vw;
+		}
+		
+		/* hero-skills */
+		main > section.hero-skills > .content-container {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 2fr;
+		}
+
+		
+
+		main > section.hero-skills .projects {
+			grid-template-columns: repeat(2, 1fr);
+  			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 20px
+		}
+
+		main section.hero-skills .projects-sec-intro {
+				margin: 5px 0 0 0;
+				font-size: 2.1vh;
+		}
+
+		main section.hero-skills .projects-sec-intro p {
+			margin: 5px 0 0 0;
+		}
+
+		main > section.hero-skills .projects .project > .project-icons-cover {
+			padding: 0 3px;
+		}
+
+		/* curriculum-vitae */
+		
+		
+		main > section.curriculum-vitae > .content-container {
+			grid-template-rows: 1fr 2fr 2fr 1fr;
+			grid-gap: 5px;
+		}
+
+
+		main > section.curriculum-vitae > .content-container .about-me p {
+			padding: 0.9vh;
+		}
+
+		main > section.curriculum-vitae > .content-container .about-me h2 {
+			padding: 5px 0 0 0;
+			font-size: 0.8em;
+		}
+
+		main > section.curriculum-vitae > .content-container h3 {
+			padding: 0;
+			margin: 0px;
+		}
+		
+		main > section.curriculum-vitae > .content-container .about-me h2,
+		main > section.curriculum-vitae > .content-container h3,
+		main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+			font-size: 1.8vh;
+		}
+		
+		main > section.curriculum-vitae > .content-container .soft-skills-list li,
+		section.curriculum-vitae p,
+		main > section.curriculum-vitae > .content-container .about-me p {
+			font-size: 0.5em;
+			line-height: 1;
+		}
+
+		main > section.curriculum-vitae > .content-container .soft-skills-list li {
+			height:auto;
+		}
+
+		/* footer */
+
+		footer.footer-index > .content-container {
+			grid-template-rows: 1fr 4fr;
+		}
+		
+		.footer-index > .content-container > .contact {
+			grid-gap: 0.7vh;
+			justify-items: center;
+			align-items: center;
+			font-size: 3vh;
+		}
+
+		.footer-index p, li{
+			font-size: 0.8em;
+			padding: 0 2vh;
+			margin: 0;
+		}
+	
+		.footer-index .contact h2,
+		.footer-index .contact h3 {
+			font-size: 2vh;
+			margin: 0;
+			padding: 0 2vh;
+		}
+
+		.footer-index > .content-container > .contact .footer-social ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+		}
+
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 815px) and (min-height: 900px) {
+
+	main > section.main-presentation .main-text-presentation {
+		font-size: 0.9em;
+	}
+
+
+	main > section.curriculum-vitae > .content-container {
+		grid-template-rows: 1fr 2fr 2fr 1fr;
+		grid-gap: 15px;
+	}
+
+	main > section.main-presentation .main-text-presentation h2 {
+		margin: 3px 0;	
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me p {
+		padding: 10px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2 {
+		padding: 10px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container h3 {
+		padding: 10px;
+		margin: 0px;
+	}
+	
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3,
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+		font-size: 0.9em;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {
+		font-size: 0.7em;
+		line-height: 1.2;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li {
+		height:auto;
+	}
+
+
+} 
+
+
+/* LANDSCAPE */
+
+
+
+
+
+
+@media (max-width: 1600px) and (orientation: landscape)  {
+
+	footer.footer-index {
+		display: grid;
+		justify-items: normal;
+		align-items: normal;
+	}
+
+}
+
+
+@media screen and (max-width: 1800px) and (orientation: landscape)  {
+
+
+	.content-container {
+    		margin: 0 5%; 
+	}
+
+
+}
+
+
+
+/* Duże monitory */
+@media (max-width: 1441px) {
+
+  	.content {
+    	/* Style dla ekranów 1441px i większych */ 
+  	}
+
+}
+
+
+
+
+
+
+@media screen and (max-height: 500px) and (max-width: 1000px) and (orientation: landscape) {
+	
+	/* NAV */
+	
+	
+
+	.nav-container {
+		padding: 0 5%;
+		height: 40px;
+	}
+
+	nav > .nav-container > .nav-social-links {
+		display: none;
+	}
+
+	.nav-logo .names {
+		font-size: 0.5em;
+	}
+
+	.nav-logo .surname {
+		font-size: 0.7em;
+	}
+
+	nav a {
+		padding: 0;
+		font-family: 0.7em;
+	}
+
+	.nav-links a {
+		font-size: 0.7em;
+	}
+
+	.nav-social-links {
+		display: flex;      
+	}
+
+	.nav-toggle {
+		width: 30px;
+		height: 25px;
+		border: 1px solid #e7e7e7;
+	}
+
+	nav > .nav-container > .nav-links > span {
+			padding: 5px;
+	}
+
+	/* HEADER */
+
+
+
+	.header-hero {
+		width: 100vw;
+		font-size: 0.7em;
+		margin: 0 5%;   
+	}
+
+	.header-buttons button:nth-child(1) {
+			border-radius: 20px; 
+	}
+	  
+	.header-buttons button:nth-child(2) {
+			border-radius: 20px; 
+	}
+
+	/* MAIN */
+
+	main > section {
+	}
+	.main-picture-presentation img {
+		width: 100%;
+		height: 80vh;
+	} 
+
+	main section.hero-skills .projects-sec-intro h2 {
+		margin: 0;
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+
+	main > section.hero-skills .projects .project > .project-icons-cover {
+		padding: 0;
+	}
+
+	main > section.hero-skills .projects .project h3 {
+		margin: 0;
+		font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {	
+		font-size: 0.8em;
+		padding-top: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3 {
+		font-size: 1em;
+		padding-top: 5px;
+	}
+	
+	main section.main-presentation .main-text-presentation {
+		font-size: 0.7em;
+	}
+	
+	main > section.main-presentation .main-text-presentation h2 {
+		margin: 15px 0 0 0;	
+	}
+	main section.hero-skills .projects-sec-intro {
+		margin: 20px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main section.hero-skills .projects-sec-intro p {
+		margin: 5px 0 0 0;
+	}
+
+	/* curriculum-vitae */
+
+	main > section.curriculum-vitae > .content-container {
+		margin: 0;
+		padding: 3px;
+		grid-template-rows: 1fr 3fr 1fr;
+		grid-gap: 10px;
+	}
+	main > section.curriculum-vitae > .content-container .about-me p {
+		padding: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2 {
+		padding: 5px 0 0 0;
+		font-size: 0.8em;
+	}
+
+	main > section.curriculum-vitae > .content-container h3 {
+		padding: 0;
+		margin: 0px;
+	}
+	
+	main > section.curriculum-vitae > .content-container .about-me h2,
+	main > section.curriculum-vitae > .content-container h3,
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+		font-size: 0.7em;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li,
+	section.curriculum-vitae p,
+	main > section.curriculum-vitae > .content-container .about-me p {
+		font-size: 0.5em;
+		line-height: 1;
+	}
+
+	
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list {
+		grid-gap: 10px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li {
+		height: unset;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	/* FOOTER */ 
+
+	footer.footer-index > .content-container {
+		grid-template-rows: 2fr 1fr;
+	}
+
+
+	footer.footer-index {
+		align-items: center;
+	}
+	footer.footer-index > .content-container {
+		grid-template-rows: 1fr 3fr;
+	}
+
+	.footer-index > .content-container > .contact {
+		grid-gap: 7px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.footer-social ul {
+		flex-direction: column-reverse;
+	}
+	.footer-index p, li{
+		font-size: 0.7em;
+		text-align: left;
+	}
+	.footer-index .contact p {
+		margin: 3px;
+		
+	}
+
+	/* .footer-index .contact div:nth-child(1), .footer-index .contact div:nth-child(2) {border-right: 1px white solid;} */
+
+
+	.footer-index h2,
+	.footer-index h3 {
+		font-size: 1em;
+		margin: 5px;
+	}
+
+	.footer-index .contact h2,
+	.footer-index .contact h3 {
+		font-size: 1em;
+		margin: 3px;
+	}
+
+
+}
+
+
+
+/* Responsywność od 481px do 768px szerokości */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    
+    	
+    	/* INDEX FOOTER */
+    	.footer-index .contact {
+      		grid-template-columns: 1fr; /* One column layout for mobile */
+    	}
+  
+    	.footer-about, .footer-contact, .footer-social {
+      		text-align: center;
+      		margin-bottom: 20px; /* Add margin for spacing between the sections */
+    	}
+  
+    	.footer-social ul {
+      		display: flex;
+      		justify-content: center;
+    	}
+  
+    	.footer-social li {
+      		margin: 0 10px;
+	}
+
+
+	.soft-skills-list li {
+      		display: block;
+      		margin: 10px auto; 
+	}
+
+
+}
+  
+
+@media (max-width: 1200px) and (orientation: landscape) {
+
+	body {
+      
+    	}
+
+}
+
+/* Laptopy i małe monitory */
+@media (max-width: 1025px) and (orientation: landscape)  {
+  
+    
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) and (orientation: landscape) {
+
+	main section.main-presentation {
+		font-size: 0.8em;
+	}
+
+	  .main-picture-presentation img {
+    		width: 100%;
+    		height: 70vh;
+  	}
+
+}
+
+@media screen and (max-width: 530px) and (max-height: 350px) and (orientation: landscape) {
+
+	main section.main-presentation {
+		font-size: 0.7em;
+	}
+
+	  .main-picture-presentation img {
+    		width: 100%;
+    		height: 70vh;
+  	}
+
+	.nav-logo .surname {
+		font-size: 0.6em;
+	}
+	
+	 .nav-logo .names {
+    		font-size: 0.4em;
+  	}
+
+	.nav-links {
+		gap: 5%;
+	}
+
+	.nav-container {
+		justify-content: space-around;
+	}
+
+	.nav-container {
+		height: 30px;
+	}
+
+	.content-container {
+    		margin: 0;
+		width: 95%;
+	}
+
+	header.header-index { 
+		grid-template-rows: 3fr 2fr;
+	}
+	.header-buttons button {
+		width: 150px;
+	}
+
+	main > section.main-presentation > .content-container {
+		grid-gap: 0px;
+	}
+
+	main > section.hero-skills > .content-container {
+		grid-template-rows: repeat(2, 1fr);
+		gap: 5px;
+	}
+
+	main > section.hero-skills .projects-sec-intro {
+		font-size: 0.8em;
+	}
+
+	main > section.hero-skills .projects {
+		grid-gap: 10px;
+		height: auto;
+	}
+
+	main > section.curriculum-vitae > .content-container {
+		grid-template-rows: 1fr 2fr 1fr;
+	}
+
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations p {
+		line-height: 1;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list {
+		gap: 5px;
+	}
+
+	main > section.curriculum-vitae > .content-container .soft-skills-list li {
+		padding: 3px;
+	}
+	
+	main > section.curriculum-vitae > .content-container .soft-skills-list li, 
+	section.curriculum-vitae p, 
+	main > section.curriculum-vitae > .content-container .about-me p {
+		padding: 0px 3px 3px 3px;
+	}
+
+	main > section.curriculum-vitae > .content-container .about-me h2, 
+	main > section.curriculum-vitae > .content-container h3, 
+	main > section.curriculum-vitae > .content-container .interests-and-aspirations h3 {
+		font-size: 0.5em;
+	}
+	
+	main > section.curriculum-vitae > .content-container .about-me h2 {
+		padding: 2px 0 0 0;
+		font-weight: 800;
+	}
+
+	main > section.curriculum-vitae > .content-container {
+		gap: 5px;
+	}
+	
+	footer.footer-index {
+		align-items: end;
+		justify-items: center;
+    		align-items: end;
+	}
+	
+
+}
+
+

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url('./fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+  #headerVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    object-fit: cover; /* Zapewnia pokrycie całego obszaru bez utraty proporcji */
+  }
+    
+  .header-hero {
+    grid-row: 1;
+    position: relative;
+    z-index: 1; /* Upewnij się, że treść jest ponad wideo */
+    justify-items: center;
+
+    color: white; /* Zapewnia kontrast tekstowi na wideo */
+    text-align: center;
+    /* Dodaj inne style według potrzeb */
+  }
+  
+  .header-buttons {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.2s forwards;
+    transition-delay: 0.5s;
+  }
+  
+  .header-buttons button {
+    border: none;
+    width: 20em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5%;
+    display: grid;
+  }
+
+  .header-buttons button:nth-child(1) {
+    background: #cecece;
+    color: #303030;
+  }
+
+  .header-buttons button:nth-child(2) {
+    background: #303030;
+    color: #cecece;
+  }
+
+ 
+  .header-buttons button {
+    border: none;
+    width: 200px; 
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; /* płynna animacja dla efektów hover i focus */
+  }
+  
+  .header-buttons button:hover,
+  .header-buttons button:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* większy cień przy najechaniu lub fokusie */
+    transform: translateY(-2px); /* lekkie uniesienie przycisku */
+  }
+  
+  .header-buttons button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* mniejszy cień przy kliknięciu */
+    transform: translateY(1px); /* 'wciśnięcie' przycisku */
+  }
+  
+  .header-buttons button:nth-child(1) {
+    background: #cecece;
+    color: #;
+    border-radius: 20px 5px; /* asymetryczne zaokrąglenia: 20px w lewym górnym i prawym dolnym rogu, 5px w prawym górnym i lewym dolnym rogu */
+  }
+  
+  .header-buttons button:nth-child(2) {
+    background: #303030;
+    color: #cecece;
+    border-radius: 5px 20px; /* asymetryczne zaokrąglenia: 5px w lewym górnym i prawym dolnym rogu, 20px w prawym górnym i lewym dolnym rogu */
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* ... Responsywność i inne style już zdefiniowane ... */
+  }
+  

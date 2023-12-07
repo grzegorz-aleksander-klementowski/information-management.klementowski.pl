@@ -1,0 +1,152 @@
+/* structure of index.html */
+
+
+
+
+@font-face {
+  font-family: 'Dominik';
+  src: url('../fonts/Dominik\ Thin/DOMINIKTH.TTF') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+html, body, * { 
+      scroll-behavior: smooth;
+    }
+
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr; /* Cała szerokość ekranu jest domyślnie dla 1fr */
+  grid-template-rows: 100vh auto 100vh; /* `auto` dla main, żeby mógł się rozciągnąć */
+  min-height: 100vh;
+  background-color: black;
+  color: azure;
+  font-weight: 100;
+  font-family: Lato;  
+  -webkit-user-select: none;  /* Chrome, Safari, Opera */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* Internet Explorer/Edge */
+  user-select: none;  
+}
+
+a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+a:visited {
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+strong {
+  font-weight: 800;
+}
+
+
+header {
+  position: relative;
+  overflow: hidden; /* Zapobiega wyświetlaniu się wideo poza headerem */
+
+  display: grid;
+  grid-template-rows: 4fr 1fr;;
+  justify-items: center;
+  align-items: center;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(3, 100vh); /* Trzy sekcje, każda 100vh */
+}
+
+main > section {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-container {
+  max-width: 1600px;
+  height: 100%;
+  width: 90%;
+  height: 85%;
+  margin-top: 40px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* main-presentation */
+
+main .main-presentation {
+  background: linear-gradient(to right, #000000, #0101ad);
+}
+
+main > section.main-presentation > .content-container {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  
+}
+
+/* hero-skills */
+
+main > section.hero-skills {
+  animation: backgroundAnimation 9s infinite; 
+}
+
+main > section.hero-skills > .content-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+
+/* curriculum-vitae */
+
+main > section.curriculum-vitae {
+  background-color: #3c0058;
+}
+
+main > section.curriculum-vitae > .content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 20px;
+}
+
+/* footer */
+
+footer.footer-index {
+  grid-area: footer;
+  background-color: black;
+  color: #f8f9fa;
+  font-family: Arial, sans-serif;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+footer.footer-index > .content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+}

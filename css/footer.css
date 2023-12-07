@@ -1,0 +1,46 @@
+
+footer.footer-index .ending-info {
+  grid-row: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Since we are now having one .contact div, we do not need auto-fit and minmax */
+.footer-index .contact {
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: repeat(3, minmax(220px, 1fr)); /* Three columns for the child divs */
+  grid-gap: 20px;
+}
+
+.footer-index h3 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.footer-index p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #f8f9fa;
+}
+
+.footer-index ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-index li {
+  margin-bottom: 10px;
+}
+
+.footer-index a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-index a:hover {
+  color: #0056b3;
+}
+

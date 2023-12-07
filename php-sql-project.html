@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP + SQL project shopping cards</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Grzegorz Aleksander Klementowski - specjalista IT. Odkryj moje portfolio z programowania, zarządzania systemami informacyjnymi, procesami biznesowymi i projektami w języku Rust.">
+		<meta name="keywords" content="Grzegorz Aleksander Klementowski, IT portfolio, Programming expertise, MIS specialist, Business process management, Rust programmer">
+		<!-- CSS styles -->
+		<link rel="stylesheet" href="./css/pages.css">
+		<link rel="stylesheet" href="./css/nav.css">
+		<link rel="stylesheet" href="./css/responsive.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<!-- Java Script -->
+		<script src="./javascript/script.js" defer></script>
+		<!-- inne -->
+		<link rel="icon" href="./img/GAK-MIS_logo-no-bg.png" type="image/png">
+	</head>
+	<body class="scroll-container">
+		
+		<header class="header-project-site">
+			<nav>
+				<div class="nav-container">
+				  	<a href="index.html" class="nav-logo">
+						<Span class="names">Grzegorz Aleksander</Span>
+						<span class="surname">Klementowski</span>
+					</a>
+				  	<div class="nav-links hide-menu">
+						<span onclick="handleHamburgerClick()">x</span>
+						<a href="index.html">Home</a>
+						<a href="index.html#about">About</a>
+						<a href="index.html#portfolio">Portfolio</a>
+						<a href="index.html#competencies">Competencies</a>
+						<a href="index.html#contact">Contact</a>
+
+						<div class="nav-social-links">
+							<a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">
+								<img src="./img/facebook-svgrepo-com-black.svg" alt="facebook icon">
+							</a>
+							<a href="https://github.com/Klemens-Gak" target="_blank">
+								<img src="./img/github-142-svgrepo-com-black.svg" alt="github icon">
+							</a>
+							<a href="https://www.linkedin.com/in/grzegorz-aleksander-klementowski/" target="_blank">
+								<img src="./img/linkedin-round-svgrepo-com-black.svg" alt="likedin icon">
+							</a>
+						</div>
+				  	</div>
+					<div class="nav-social-links">
+						<a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">
+							<img src="./img/facebook-svgrepo-com.svg" alt="facebook icon">
+						</a>
+						<a href="https://github.com/Klemens-Gak" target="_blank">
+							<img src="./img/github-142-svgrepo-com.svg" alt="github icon">
+						</a>
+						<a href="https://www.linkedin.com/in/grzegorz-aleksander-klementowski/" target="_blank">
+							<img src="./img/linkedin-round-svgrepo-com.svg" alt="likedin icon">
+						</a>
+					</div>
+				</div>				
+			</nav>
+			<div class="header-hero">
+				<h1>PHP+MySQL Shopping cards "Pizzomania" project</h1>
+			</div>
+			<div class="description">
+				<p>This is my project from 2018 for one of local restaurant. Owner need to develop marketing online and ordering dishes online. Source code you can find on my <a target="_blank" href="https://github.com/grzegorz-aleksander-klementowski/Woj-pizzeria_online-shop/">GitHub project site</a>.</p>
+				<h3>Languages: </h3>
+				<ul>
+					<li>PHP</li>
+					<li>JavaScript</li>
+				</ul>
+				<h3>Table of content:</h3>
+				<ul>
+					<li><a href="#project-features">Features</a></li>
+					<li><a href="#used-skills">Used skills</a></li>
+					<li><a href="#project-img-presentations">Project screenshots</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<main>
+			<section id="project-features">
+				<h2>Features</h2>			    
+				<ul>
+				    <li><b>Dynamic Menu and Product Display:</b> Your site features a dynamically generated menu (from menu-content.php), showcasing various types of pizzas with descriptions and prices. This is a key feature that allows users to easily browse and select products.</li>
+
+				    <li><b>Order Management:</b> Functions in load-colected-dish-order.php and dishes.php facilitate efficient processing and management of customer orders. This includes collecting order data and presenting it in an accessible manner.</li>
+
+				    <li><b>Interactive Photo Gallery:</b> Using JavaScript (main.js), you create an interactive photo gallery, allowing users to view images of dishes and the restaurant’s ambiance. This is important for visually engaging customers.</li>
+
+				    <li><b>Responsiveness and Styling:</b> The use of Bootstrap ensures that the site is responsive and looks good on various devices. Styling and layout are crucial for providing a pleasant user experience.</li>
+
+				    <li><b>Modular Components:</b> The use of modular components (components.php) indicates an efficient structure of the site, allowing for easy modifications and future development.</li>
+
+				    <li><b>Advanced JavaScript Features:</b> Functions like pickUpLargeDish in main.js showcase advanced JavaScript capabilities, enabling dynamic interactions such as updating the shopping cart and managing the state of the page.</li>
+
+				    <li><b>SEO and Accessibility:</b> Optimization for SEO and accessibility through proper meta tags and alt attributes for images enhances the site's usability and visibility in search engines.</li>
+				</ul>
+			</section>
+			<section id="used-skills">
+				<h2>Used skills</h2>
+				<ul>
+					    <li><b>Object-Oriented Programming (OOP) Skills:</b> The Dish class in load-dishes.php demonstrates your understanding and application of the object-oriented paradigm. Defining getters and setters for various properties of the Dish object illustrates how you organize and manage data in an object structure.</li>
+					    <li><b>PHP and HTML in Practice:</b> In menu-content.php, you combine PHP with HTML, showcasing your ability to create dynamic web content. You use PHP to inject data from Dish objects directly into the HTML structure, a key skill in developing dynamic websites.</li>
+					    <li><b>Database Management and SQL:</b> In load-dishes.php, you perform SQL queries to the database, showing your ability to interact with databases. You select data from the database based on specific criteria, a fundamental element of most web applications.</li>
+					    <li><b>Frontend and Backend Integration:</b> In menu-content.php, you use JavaScript (onclick in button tags) to interact with users, demonstrating your ability to connect backend (PHP) with frontend scripts (JavaScript).</li>
+					    <li><b>Dynamic Content Loading:</b> Using AJAX in load-dishes.php to load content on demand shows your skills in creating responsive and interactive web pages.</li>
+					    <li><b>Good Coding Style:</b> Your code is well-organized and readable, evidencing your approach to writing maintainable and easy-to-understand code.</li>
+					    <li><b>Error Handling and Debugging:</b> You check the database connection and perform appropriate actions in case of errors, which is important for application stability.</li>
+					    <li><b>Modularity and Code Reusability:</b> In components.php, you define functions such as component_head, component_nav, component_footer, etc., exemplifying a modular approach to coding. This allows for easier code organization and reuse, crucial for maintaining and developing large projects.</li>
+					    <li><b>SEO and Accessibility Practices:</b> In components.php, you pay attention to SEO and accessibility practices by adding meta tags, descriptions, keywords, etc., important for the site's visibility in search engines. Additionally, you use alt attributes for images, crucial for accessibility.</li>
+					    <li><b>Content Management:</b> In dishes.php, you have a script that loads data from the database and dynamically creates page content. This demonstrates your skills in content management and creating interactive user interfaces.</li>
+					    <li><b>Using Bootstrap and Responsive Design:</b> You use Bootstrap, a popular CSS framework, to style page elements. This shows your knowledge of modern techniques in designing responsive user interfaces that look good on various devices.</li>
+					    <li><b>Advanced Error Handling:</b> In dishes.php, you include error control for database connection issues, important for creating reliable web applications.</li>
+					    <li><b>Well-Organized HTML and PHP Code:</b> Your PHP files contain well-organized code that combines PHP logic with HTML. This shows your skills in writing readable and organized code, easy to maintain and develop.</li>
+					    <li><b>Using jQuery:</b> You utilize jQuery, indicating your familiarity with popular JavaScript libraries. You use jQuery for DOM manipulation and event handling, typical in modern front-end development.</li>
+					    <li><b>Dynamic Content Loading:</b> You create a dynamic photo gallery by generating HTML content in a loop and adding it to the DOM. This shows how effectively you load content on the page without needing to reload it.</li>
+					    <li><b>Event Handling:</b> You implement event handling functions such as openPhoto and pickUpLargeDish, which respond to user actions. This is an important aspect of creating interactive web pages.</li>
+					    <li><b>CSS Style Manipulation with JavaScript:</b> You use JavaScript to dynamically change CSS styles, for example, in the openPhoto function, where you modify the display of elements. This demonstrates your ability to create dynamic, interactive user interfaces.</li>
+					    <li><b>Backend Communication:</b> You use the $.load() function to fetch data from the PHP server, indicating your knowledge of AJAX and asynchronous communication with the server. This is a key element in creating responsive web applications.</li>
+					    <li><b>State Management:</b> With each dish selection, you update the shopping cart and the total amount due, showing how you manage the page's state and dynamically update information for the user.</li>
+			</ul>
+			</section>
+			<section id="project-img-presentations">
+				<h2>Project screenshots</h2>
+				<img src="./img/presentation/PHP-pizzomania/1.png">
+				<img src="./img/presentation/PHP-pizzomania/2.png">
+				<img src="./img/presentation/PHP-pizzomania/3.png">
+				<img src="./img/presentation/PHP-pizzomania/4.png">
+				<img src="./img/presentation/PHP-pizzomania/5.png">
+				<img src="./img/presentation/PHP-pizzomania/6.png">
+			</section>
+		</main>	
+
+		<footer class="footer-index">
+			<div class="content-container reveal">
+			  <div class="ending-info">
+				<h2>I'm waiting for contact with you!</h2>
+			  </div>
+			  <div class="contact">
+				<div class="footer-about">
+					<h3>About Me</h3>
+					<p>A technology and innovation enthusiast, always ready to take on new challenges in the field of Information Management Systems. I delve into the world of data to create meaningful solutions.</p>
+				</div>
+				<div class="footer-contact">
+					<h3>Contact</h3>
+					<p>Have a question or want to collaborate? Get in touch with me:</p>
+					<ul>
+					  <li>Email: <a href="mailto:grzegorz.aleksander@klementowski.pl">grzegorz.aleksander@klementowski.pl</a></li>
+					  <li>Phone: <a href="tel:+48792502920">+48 792 502 920</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<h3>Follow Me</h3>
+					<p>Stay updated with my projects and progress on social media:</p>
+					<ul>
+					  <li><a href="https://www.facebook.com/GrzegorzAleksanderKlementowski/" target="_blank">Facebook</a></li>
+					  <li><a href="https://github.com/Klemens-Gak" target="_blank">GitHub</a></li>
+					  <li><a href="https://www.linkedin.com/in/grzegorz-aleksander-klementowski/" target="_blank">LinkedIn</a></li>
+					</ul>
+				</div>
+			  </div>
+		  
+			</div>
+		</footer>
+		  
+
+	</body>
+</html>
