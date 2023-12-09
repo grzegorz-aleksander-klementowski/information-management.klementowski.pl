@@ -68,10 +68,11 @@ nav a {
   }
   
   .nav-links a {
-    color: #e7e7e7;
+    color: #f8f8f8;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     font-size: 0.9em;
+    font-weight: 800;
   }
   
   .nav-links a:hover {

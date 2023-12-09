@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_901_3126)">
+<path d="M31 8V30C31 30.55 30.55 31 30 31H26V7H30C30.55 7 31 7.45 31 8ZM22 7V31H18V13H14V31H10V19H6V31H2C1.45 31 1 30.55 1 30V8C1 7.45 1.45 7 2 7H22Z" fill="#FFE6EA"/>
+<path d="M26 7V31H22V7V1H26V7Z" fill="#FFC44D"/>
+<path d="M14 31H18V13H14V31Z" fill="#668077"/>
+<path d="M6 31H10V19H6V31Z" fill="#668077"/>
+<path d="M29 7H30C30.553 7 31 7.447 31 8V30C31 30.553 30.553 31 30 31H2C1.447 31 1 30.553 1 30V8C1 7.447 1.447 7 2 7H19M6 28V19H10V28M14 28V13H18V28M22 28V1H26V28" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_901_3126">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

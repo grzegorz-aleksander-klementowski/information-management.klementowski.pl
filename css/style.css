@@ -125,7 +125,7 @@ main > section.curriculum-vitae {
 
 main > section.curriculum-vitae > .content-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 1fr;
   grid-gap: 20px;
 }

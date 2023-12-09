@@ -25,7 +25,7 @@ function typeWriter(element, text, speed) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const myElement = document.querySelector('.typewriter');
-  const textToType = "Hi, I am Klementowski,<br>We are creating future of Information Management Sytems";
+  const textToType = "Cześć, jesteśmy firmą Klementowski. <br>Tworzymy przyszłość zarządzania systemami informacji w organizacjach prywatnych.";
   typeWriter(myElement, textToType, 50); // Adjust speed as necessary
 });
 
