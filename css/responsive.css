@@ -357,7 +357,7 @@
 		main > section.curriculum-vitae > .content-container .soft-skills-list li,
 		section.curriculum-vitae p,
 		main > section.curriculum-vitae > .content-container .about-me p {
-			font-size: 0.5em;
+			font-size: 1.8vh;
 			line-height: 1;
 		}
 
